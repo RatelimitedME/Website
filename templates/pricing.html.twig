@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="pricing">
+	<head>
+
+		<!-- Meta Tags -->
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#B41919">
+
+		<!-- OpenGraph -->
+
+		<meta name="description" content="RATELIMITED | No-bullshit File Hosting | You can upload to RATELIMITED with whichever of our domains you want to using our API.">
+		<meta property="og:title" content="RATELIMITED">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://ratelimited.me/">
+		<meta property="og:image" content="https://RATELIMITED.me/logo_dark.png">
+		<meta property="og:description" content="RATELIMITED's a free, no-bullshit file hosting service">
+		<meta name="keywords" content="ratelimited, rate limited, rlme, file hosting, free file hosting, hosting, filehost, discord image hosting, image host, image hosting">
+
+		<!-- StyleSheets -->
+
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
+		<link rel="stylesheet" type="text/css" href="{{ assets_host }}/css/devices.min.css">
+		<link rel="stylesheet" type="text/css" href="{{ assets_host }}/css/styles.css">
+		
+		<title>RATELIMITED &middot; Home</title>
+
+		<!-- Required for IE11 Only -->
+
+		<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+		<!-- Standard dependencies -->
+
+		<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-bundle.js"></script>
+		<script src="https://unpkg.com/@statuspage/status-widget/dist/index.js"></script>
+
+	</head>
+	<body>
+
+		<noscript>
+			<style>
+				html,body {
+					overflow: hidden;
+				}
+				.noscript {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					background-color: #1f2325;
+					z-index: 100;
+				}
+				.noscript .wrap {
+					width: 100%;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%,-50%);
+					text-align: center;
+				}
+				.logo {
+					display: block;
+					position: relative;
+					margin: 0 auto 16px;
+					background-image: url("{{ assets_host }}/img/rlogo-white.png")
+				}
+				.logo:nth-child(2) {
+					background-position-x: -42px;
+				}
+				a {
+					color: #999;
+				}
+			</style>
+			<div class="noscript">
+				<div class="wrap">
+					<div class="logo"></div>
+					<span>
+						For full functionality of this site it is necessary to enable JavaScript.<br>
+						Click <a href="https://www.enable-javascript.com/">here</a> for instructions on how to enable JavaScript in your web browser.
+					</span>
+				</div>
+			</div>
+		</noscript>
+
+		<div class="fix">
+
+			<div class="navBar"></div>
+
+			<div class="content">
+				
+				<h2>Pricing</h2>
+				
+				<h3>Want to support RATELIMITED?<br>Purchase an optional donation package which will help further development.</h3>
+
+				<div class="bigSection light">
+
+					<div class="card plan">
+						<div class="top">
+							<h3 class="planName">FREE</h3>
+							<h4 class="planPrice"><sup>$</sup>0<small> USD<i>/yr</i></small></h4>
+						</div>
+						<div class="bottom">
+
+							<div class="feature">We host your files</div>
+							<div class="feature">Easy installation and support</div>
+							<div class="feature">Access to all RLME services</div>
+							<div class="feature">Client Documentation</div>
+							<div class="feature">Up to {{ freeUploadLimit }} per file</div>
+							<div class="feature red">No file statistics monitoring</div>
+							<div class="feature red">No early access to new features</div>
+
+						</div>
+						<div class="action">
+							<a class="button main" href="https://ratelimited.me/signup">Sign Up</a>
+						</div>
+					</div><!--
+
+					--><div class="card plan">
+						<div class="top">
+							<h3 class="planName">Premium</h3>
+							<h4 class="planPrice"><sup>$</sup>{{ premiumPrice }}<small> USD<i>/yr</i></small></h4>
+						</div>
+						<div class="bottom">
+
+							<div class="feature">Everything in FREE plan</div>
+							<div class="feature">{{ premiumPrivateDomains }} private domains</div>
+							<div class="feature">Up to {{ premiumUsersPerBucket }} users per bucket</div>
+							<div class="feature">Up to {{ premiumApiKeys }} API keys</div>
+							<div class="feature">Up to {{ premiumUploadLimit }} per file</div>
+							<div class="feature red">No file statistics monitoring</div>
+							<div class="feature red">No early access to new features</div>
+
+						</div>
+						<div class="action">
+							<a class="button main" href="https://ratelimited.me/signup">Buy Now</a>
+						</div>
+					</div><!--
+
+					--><div class="card plan">
+						<div class="top">
+							<h3 class="planName">Deluxe</h3>
+							<h4 class="planPrice"><sup>$</sup>{{ deluxePrice }}<small> USD<i>/yr</i></small></h4>
+						</div>
+						<div class="bottom">
+
+							<div class="feature">Everything in PREMIUM plan</div>
+							<div class="feature">{{ deluxePrivateDomains }} private domains</div>
+							<div class="feature">Up to {{ deluxeUsersPerBucket }} users per bucket</div>
+							<div class="feature">{{ deluxeApiKeys }} API keys</div>
+							<div class="feature">Up to {{ deluxeUploadLimit }} per file</div>
+							<div class="feature">File statistics monitoring</div>
+							<div class="feature">Early access to new features</div>
+
+						</div>
+						<div class="action">
+							<a class="button main" href="https://ratelimited.me/signup">Buy Now</a>
+						</div>
+					</div>
+    
+				</div>
+
+			</div>
+
+			<div class="dropDownBar"></div>
+
+			<div class="swirls"></div>
+			<div class="footerContainer"></div>
+
+		</div>
+
+	</body>
+
+	<!-- JavaScript -->
+
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script class="noscript">document.querySelector("noscript").remove(this);document.querySelector(".noscript").remove(this)</script>
+	<script type="text/javascript" src="{{ assets_host }}/js/scripts.js"></script>
+
+</html>
